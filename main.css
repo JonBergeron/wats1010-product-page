@@ -249,14 +249,19 @@ footer{
 	margin: 0 -10px -27px -12px;
 }
 
-footer p{
+footer p, footer a{
 	margin: 0 0 -10px 5px;
 	font-size: 15px;
+	color: #FDB913;
+	text-decoration: none;
 }
 
 footer ul li{
 	display: inline;
 	margin: 0 30px 0 30px;
-	font-size: 14px;
 	font-family: "Tahoma";
+}
+
+footer a:hover{
+	text-decoration:underline;
 }

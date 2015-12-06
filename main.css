@@ -7,7 +7,7 @@ html {
 	}
 
 body {
-    padding-top: 30px;
+    padding-top: 46px;
     padding-bottom: 20px;
 }
 
@@ -17,16 +17,16 @@ h1, h2{
 	padding: 5px 110px 5px 210px;
 	font-family: "Impact";
 	font-size: 36px;
-	margin: -14px -20px 0 -20px;
+	margin: 0 -10px 0 -10px;
+	z-index: -1;
 }
 
 
 p{
-	color: #FDB913;
-	font-family: "Tahoma"
+	font-family: "Tahoma";
 }
 
-/* Menu Styling*/
+/* Logo styling */
 
 img#logo{
 	width: 200px;
@@ -34,6 +34,8 @@ img#logo{
 	position: fixed;
 	margin: -60px 0 0 -15px;
 }
+
+/* Menu Styling*/
 
 div#menu{
 	position: fixed;
@@ -52,13 +54,18 @@ ul.menu-links li{
 	background-color:#AA0000;
 	border-style: solid;
 	border-color:#FDB913;
-
-
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
 } 
 
 ul.menu-links li a{
 	color: #FDB913;
-	background-color:#AA0000;
 	font-size: 26px;
 	font-family: "Impact";
 	text-decoration: none;
@@ -89,24 +96,38 @@ ul.menu-links li:nth-child(5){
 	margin: 0 0 0 0;
 }
 
-ul.menu-links li:hover{
-	border-color:#AA0000;
-	background-color:#FDB913;
-	color: #AA0000;
+ul.menu-links li:hover, ul.menu-links li:focus, ul.menu-links li:active{
+  box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-ul.menu-links li a:hover{
-	color: #AA0000;
-	background-color: #AA0000;
-}
+/* Share styling */
 
-p.contact-info{
+section#share{
 	position: fixed;
 	float: right;
-	margin: -40px 0 0 800px;
-	background-color:#AA0000;
-	color: #FDB913;
+	margin: -55px 0 0 800px;
+	background-color:#FDB913;
+	color: #AA0000;
+	border-radius: 5px;
 }
+
+section#share p{
+	margin: 10px 0 0 10px;
+	font-family: "Impact";
+}
+
+ul#share-links{
+	margin-left: -20px;
+}
+
+ul#share-links li{
+	display:inline-block;
+	margin: -10px -4px 0 -4px;
+	padding: 0 0 0 0;
+}
+
 
 /* Content Styling */
 
@@ -117,7 +138,8 @@ div#content-container{
 div#description, div#video, div#features, div#testimonials, div#shop-button{
 	margin-left: 210px;
 	max-width: 600px;
-	padding-top:20px
+	padding-top:20px;
+	color: #FDB913;
 }
 
 div#description{
@@ -125,32 +147,16 @@ div#description{
 	margin-bottom: 100px;
 }
 
-div#video p{
+div#video{
 	font-size: 20px;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 div#features{
 	margin-bottom: 100px;
-	font-size: 20px;
-}
-
-div#features ul li{
-	font-size: 18px;
-	color: #FDB913;
 	font-family: "Tahoma";
-	list-style-type: none;
-	margin: 0 0 0 -30px;
-	padding: 5px 0 0 0;
+	font-size: 18px;
 }
-
-div#features ul li:before {
-content: "•";
-color: #AA0000;
-padding-right: 20px;
-}
-
-
 
 img.testimony{
 	width: 150px;
@@ -162,9 +168,9 @@ img.testimony{
 	margin-left: -50px;
 }
 
-
 div#testimonials{
 	margin-bottom: 100px;
+	font-size: 16px;
 }
 
 div#testimonials ul li{
@@ -174,12 +180,12 @@ div#testimonials ul li{
 }
 
 div#testimonials ul li:first-child p{
-	margin-right: 217px;
+	margin-right: 225px;
 	margin-top: 60px;
 }
 
 div#testimonials ul li:nth-child(2) p{
-	margin-right: 45px;
+	margin-right: 40px;
 }
 
 div#testimonials ul li:nth-child(3) p{
@@ -189,7 +195,7 @@ div#testimonials ul li:nth-child(3) p{
 
 div#testimonials ul li:nth-child(4) p{
 	margin-right:45px;
-	margin-top: 30px;
+	margin-top: 25px;
 }
 
 li p{
@@ -197,4 +203,60 @@ li p{
 	margin-left: 10px;
 	float: right;
 	text-align:justify;
+}
+
+/* sign-up */
+div#shop-button{
+	font-size: 20px;
+
+}
+div#button-area {
+	width: 550px;
+	height: 120px;
+	background: #AA0000;
+	border-radius: 6px;
+	box-shadow: -5px 5px 0.5px;
+	text-align: center;
+	margin: 0 0 100px 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+div#button-area:hover, div#button-area:focus, div#button-area:active{
+  box-shadow: -20 20px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+div#button-area a{
+	font-size: 48px;
+	font-family: "Impact";
+	color: #FDB913;
+	text-decoration: none;
+}
+
+/* footer */
+footer{
+	color: #FDB913;
+	border-style: solid;
+	background-color: #AA0000;
+	margin: 0 -10px -27px -12px;
+}
+
+footer p{
+	margin: 0 0 -10px 5px;
+	font-size: 15px;
+}
+
+footer ul li{
+	display: inline;
+	margin: 0 30px 0 30px;
+	font-size: 14px;
+	font-family: "Tahoma";
 }

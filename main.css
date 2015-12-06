@@ -1,8 +1,200 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
+html {
+	margin: 0;
+	padding: 0;
+	}
+
 body {
     padding-top: 30px;
     padding-bottom: 20px;
-    color: green;
+}
+
+
+h1, h2{
+	background-color: #AA0000;
+	padding: 5px 110px 5px 210px;
+	font-family: "Impact";
+	font-size: 36px;
+	margin: -14px -20px 0 -20px;
+}
+
+
+p{
+	color: #FDB913;
+	font-family: "Tahoma"
+}
+
+/* Menu Styling*/
+
+img#logo{
+	width: 200px;
+	height: 200px;
+	position: fixed;
+	margin: -60px 0 0 -15px;
+}
+
+div#menu{
+	position: fixed;
+	float: right;
+	margin: -54px 0 0 193px;
+}
+
+ul.menu-links{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu-links li{
+	display: inline-block;
+	background-color:#AA0000;
+	border-style: solid;
+	border-color:#FDB913;
+
+
+} 
+
+ul.menu-links li a{
+	color: #FDB913;
+	background-color:#AA0000;
+	font-size: 26px;
+	font-family: "Impact";
+	text-decoration: none;
+}
+
+ul.menu-links li:first-child{
+	padding: 0 40px 0 40px;
+	margin: 0 -4px 0 -11px;
+}
+
+ul.menu-links li:nth-child(2){
+	padding: 0 30px 0 30px;
+	margin: 0 -4px 0 0;
+}
+
+ul.menu-links li:nth-child(3){
+	padding: 0 10px 0 10px;
+	margin: 0 -4px 0 0;
+}
+
+ul.menu-links li:nth-child(4){
+	padding: 0 5px 0 5px;
+	margin: 0 -4px 0 0;
+}
+
+ul.menu-links li:nth-child(5){
+	padding: 0 5px 0 5px;
+	margin: 0 0 0 0;
+}
+
+ul.menu-links li:hover{
+	border-color:#AA0000;
+	background-color:#FDB913;
+	color: #AA0000;
+}
+
+ul.menu-links li a:hover{
+	color: #AA0000;
+	background-color: #AA0000;
+}
+
+p.contact-info{
+	position: fixed;
+	float: right;
+	margin: -40px 0 0 800px;
+	background-color:#AA0000;
+	color: #FDB913;
+}
+
+/* Content Styling */
+
+div#content-container{
+	margin-top: 165px;
+}
+
+div#description, div#video, div#features, div#testimonials, div#shop-button{
+	margin-left: 210px;
+	max-width: 600px;
+	padding-top:20px
+}
+
+div#description{
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+div#video p{
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+div#features{
+	margin-bottom: 100px;
+	font-size: 20px;
+}
+
+div#features ul li{
+	font-size: 18px;
+	color: #FDB913;
+	font-family: "Tahoma";
+	list-style-type: none;
+	margin: 0 0 0 -30px;
+	padding: 5px 0 0 0;
+}
+
+div#features ul li:before {
+content: "•";
+color: #AA0000;
+padding-right: 20px;
+}
+
+
+
+img.testimony{
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	shape-outside:circle();
+	margin-left: -50px;
+}
+
+
+div#testimonials{
+	margin-bottom: 100px;
+}
+
+div#testimonials ul li{
+	margin: 20px 0 0 0;
+	list-style-type: none;
+
+}
+
+div#testimonials ul li:first-child p{
+	margin-right: 217px;
+	margin-top: 60px;
+}
+
+div#testimonials ul li:nth-child(2) p{
+	margin-right: 45px;
+}
+
+div#testimonials ul li:nth-child(3) p{
+	margin-right: 45px;
+	margin-top: -105px;
+}
+
+div#testimonials ul li:nth-child(4) p{
+	margin-right:45px;
+	margin-top: 30px;
+}
+
+li p{
+	max-width: 400px;
+	margin-left: 10px;
+	float: right;
+	text-align:justify;
 }
